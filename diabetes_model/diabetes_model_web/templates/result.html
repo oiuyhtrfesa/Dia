@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+.myDiv {
+  border: 3px solid black;
+  background-color: pink;
+  text-align: center;
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+</head>
+<body>
+<center>
+<h1 style="color:green; align:center">Diabetes prediction</h1>
+  </center>
+<form action="{% url 'result' %}">
+      {% csrf_token %}
+<div class="myDiv">
+  <p>high_bp</p>
+  <input type="text" name="high_bp">
+  <br>
+  <p>highchol</p>
+  <input type="text" name="highchol">
+  <br>
+  <p>cholcheck</p>
+  <input type="text" name="cholcheck">
+  <br>
+  <p>bmi</p>
+  <input type="text" name="bmi">
+  <br>
+  <p>smoker</p>
+  <input type="text" name="smoker">
+  <br>
+  <p>stroke</p>
+  <input type="text" name="stroke">
+  <br>
+  <p>heartdisease_attack</p>
+  <input type="text" name="heartdisease_attack">
+  <br>
+  <p>phys_activity</p>
+  <input type="text" name="phys_activity">
+  <br>
+  <p>fruits</p>
+  <input type="text" name="fruits">
+  <br>
+  <p>veggies</p>
+  <input type="text" name="veggies">
+  <br>
+  <p>hvyalcoholconsump</p>
+  <input type="text" name="hvyalcoholconsump">
+  <br>
+  <p>anyhealthcare</p>
+  <input type="text" name="anyhealthcare">
+  <br>
+  <p>NoDocbcCost</p>
+  <input type="text" name="NoDocbcCost">
+  <br>
+  <p>GenHlth</p>
+  <input type="text" name="GenHlth">
+  <br>
+  <p>MentHlth</p>
+  <input type="text" name="MentHlth">
+  <br>
+  <p>PhysHlth</p>
+  <input type="text" name="PhysHlth">
+  <br>
+  <p>DiffWalk</p>
+  <input type="text" name="DiffWalk">
+  <br>
+  <p>sex</p>
+  <input type="text" name="sex">
+  <br>
+  <p>age</p>
+  <input type="text" name="age">
+  <br>
+  <p>education</p>
+  <input type="text" name="education">
+  <br>
+  <p>income</p>
+  <input type="text" name="income">
+  <br>
+  <br>
+  <input type="submit" value="getPredictions">
+  <br>
+  <br>
+</div>
+</form>
+</body>
+</html>
